@@ -1,0 +1,48 @@
+<!DOCTYPE html> <html><head>
+        <title>5.6 // Grade Letter Calculator</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Protest+Revolution">
+    <style>body {
+    background: #C99355;
+    font-family: 'Arial';
+}
+
+h1 {
+    font-family: 'Protest Revolution';
+}
+
+div {
+    background: white;
+    padding: 1em 2em;
+    margin: 3em;
+    border-radius: 1em;
+    border: 3px solid #0E4F00;
+}</style></head>
+    <body>
+        <div>
+            <h1>Grade Calculator</h1>
+            <p>Please enter your score:</p>
+            <input placeholder="">
+            <button onclick="play()">Submit</button>
+            <p class="letter-grade"></p>
+        </div>
+        <!-- This is a link to the audio-->
+        <audio class="audio" src="https://cdn.glitch.global/ceecf224-61c4-4403-bbb2-e473bab5039d/valve.mp3"></audio>
+    
+<script>
+/*__POPCODESTART__*/
+// Prompt the user for an exam score and assign a letter grade.
+var button = document.querySelector("button");
+var letterGrade = document.querySelector(".letter-grade");
+
+button.onclick = function () {
+  // get the score they typed into the input
+  var score = document.querySelector("input").value; // play a sound
+
+  var audio = document.querySelector(".audio");
+  audio.play(); // show them a message
+
+  if (score >= 90) {
+    letterGrade.innerHTML = "Grade = A<br><em>Nailed it!</em>";
+  }
+};
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBvcGNvZGVQcmV2aWV3LmpzIl0sIm5hbWVzIjpbImJ1dHRvbiIsImRvY3VtZW50IiwicXVlcnlTZWxlY3RvciIsImxldHRlckdyYWRlIiwib25jbGljayIsInNjb3JlIiwidmFsdWUiLCJhdWRpbyIsInBsYXkiLCJpbm5lckhUTUwiXSwibWFwcGluZ3MiOiJBQUFBO0FBQ0EsSUFBSUEsTUFBTSxHQUFHQyxRQUFRLENBQUNDLGFBQVQsQ0FBdUIsUUFBdkIsQ0FBYjtBQUNBLElBQUlDLFdBQVcsR0FBR0YsUUFBUSxDQUFDQyxhQUFULENBQXVCLGVBQXZCLENBQWxCOztBQUVBRixNQUFNLENBQUNJLE9BQVAsR0FBaUIsWUFBVztBQUN4QjtBQUNBLE1BQUlDLEtBQUssR0FBR0osUUFBUSxDQUFDQyxhQUFULENBQXVCLE9BQXZCLEVBQWdDSSxLQUE1QyxDQUZ3QixDQUl4Qjs7QUFDQSxNQUFJQyxLQUFLLEdBQUdOLFFBQVEsQ0FBQ0MsYUFBVCxDQUF1QixRQUF2QixDQUFaO0FBQ0FLLEVBQUFBLEtBQUssQ0FBQ0MsSUFBTixHQU53QixDQVF4Qjs7QUFDQSxNQUFJSCxLQUFLLElBQUksRUFBYixFQUFpQjtBQUNiRixJQUFBQSxXQUFXLENBQUNNLFNBQVosR0FBd0Isa0NBQXhCO0FBQ0g7QUFDSixDQVpEIiwic291cmNlc0NvbnRlbnQiOlsiLy8gUHJvbXB0IHRoZSB1c2VyIGZvciBhbiBleGFtIHNjb3JlIGFuZCBhc3NpZ24gYSBsZXR0ZXIgZ3JhZGUuXG5sZXQgYnV0dG9uID0gZG9jdW1lbnQucXVlcnlTZWxlY3RvcihcImJ1dHRvblwiKTtcbmxldCBsZXR0ZXJHcmFkZSA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoXCIubGV0dGVyLWdyYWRlXCIpO1xuXG5idXR0b24ub25jbGljayA9IGZ1bmN0aW9uKCkge1xuICAgIC8vIGdldCB0aGUgc2NvcmUgdGhleSB0eXBlZCBpbnRvIHRoZSBpbnB1dFxuICAgIGxldCBzY29yZSA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoXCJpbnB1dFwiKS52YWx1ZTtcblxuICAgIC8vIHBsYXkgYSBzb3VuZFxuICAgIGxldCBhdWRpbyA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoXCIuYXVkaW9cIik7XG4gICAgYXVkaW8ucGxheSgpO1xuXG4gICAgLy8gc2hvdyB0aGVtIGEgbWVzc2FnZVxuICAgIGlmIChzY29yZSA+PSA5MCkge1xuICAgICAgICBsZXR0ZXJHcmFkZS5pbm5lckhUTUwgPSBcIkdyYWRlID0gQTxicj48ZW0+TmFpbGVkIGl0ITwvZW0+XCI7XG4gICAgfVxufTsiXX0=</script></body></html>
