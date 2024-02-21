@@ -1,0 +1,16 @@
+body {
+    background: #C99355;
+    font-family: 'Arial';
+}
+
+h1 {
+    font-family: 'Protest Revolution';
+}
+
+div {
+    background: white;
+    padding: 1em 2em;
+    margin: 3em;
+    border-radius: 1em;
+    border: 3px solid #0E4F00;
+}
